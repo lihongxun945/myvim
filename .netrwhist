@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/usr/etc'
+let g:netrw_dirhist_2='/Users/lihongxun/zhihu/zhihu/.git/info'
+let g:netrw_dirhist_3='/Users/lihongxun/zhihu/zhihu/.git/objects/00'
+let g:netrw_dirhist_4='/Users/lihongxun/zhihu/zhihu/.git/objects/08'
+let g:netrw_dirhist_5='/Users/lihongxun/zhihu/zhihu/static/js/v2'
+let g:netrw_dirhist_6='/Users/lihongxun/zhihu/zhihu/apps/core/ui/uimodules'
+let g:netrw_dirhist_7='/Users/lihongxun/tools'
+let g:netrw_dirhist_8='/Users/lihongxun/Downloads/goagent'
+let g:netrw_dirhist_9='/Users/lihongxun/Downloads/goagent/server/python'
