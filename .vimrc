@@ -12,3 +12,8 @@ let javascript_enable_domhtmlcss=1
 
 let Tlist_JS_Settings = 'javascript;s:string;a:array;o:object;f:function'
 let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
+
+"pydict
+let g:pydiction_location = '~/.vim/tools/pydiction/complete-dict'
+"defalut g:pydiction_menu_height == 15
+"let g:pydiction_menu_height = 20 
