@@ -1,5 +1,13 @@
 filetype plugin indent on
 set fdm=indent
+set smarttab  
+set tabstop=4  
+set shiftwidth=4  
+set expandtab
+
+call pathogen#infect()
+syntax on
+filetype plugin indent on
 
 "F4快捷格式化js代码
 nnoremap <F4> :call g:Jsbeautify()<CR>
