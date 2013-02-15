@@ -4,16 +4,20 @@ set smarttab
 set tabstop=4  
 set shiftwidth=4  
 set expandtab
-
 call pathogen#infect()
+
 syntax on
 filetype plugin indent on
+
+"F3 NERDTree
+map <F3> :NERDTreeToggle<CR>
+imap <F3> <ESC>:NERDTreeToggle<CR>
 
 "F4快捷格式化js代码
 nnoremap <F4> :call g:Jsbeautify()<CR>
 let mapleader=","
 
-"打开javascript折叠
+""打开javascript折叠
 let b:javascript_fold=1
 "打开javascript对dom、html和css的支持
 let javascript_enable_domhtmlcss=1
