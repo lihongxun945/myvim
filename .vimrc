@@ -15,6 +15,10 @@ map <F4> :call JsBeautify()<CR>
 "F3 NERDTree
 map <F3> :NERDTreeToggle<CR>
 imap <F3> <ESC>:NERDTreeToggle<CR>
+||||||| merged common ancestors
+"F4快捷格式化js代码
+nnoremap <F4> :call g:Jsbeautify()<CR>
+let mapleader=","
 
 ""打开javascript折叠
 let b:javascript_fold=1
