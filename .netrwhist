@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/Users/lihongxun/pearl/Pearl/pearl/web/static/bootstrap'
 let g:netrw_dirhist_2='/Users/lihongxun/pearl/Pearl/pearl'
 let g:netrw_dirhist_3='/Users/lihongxun/pearl/Pearl/.git'
+let g:netrw_dirhist_4='/Users/lihongxun/zhihu/zhihu/static/js/v2/ui'
