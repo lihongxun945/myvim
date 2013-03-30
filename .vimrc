@@ -60,6 +60,8 @@ Bundle 'mileszs/ack.vim'
 " taglist 需要安装ctags
 " Bundle 'vim-scripts/taglist.vim'
 
+Bundle 'Shougo/neocomplcache'
+
 filetype plugin indent on     " required!
 filetype plugin on
 
@@ -84,3 +86,15 @@ set encoding=utf-8 " Necessary to show Unicode glyphs
 " ctrlp config
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
+
+"neocomplecache 自动启动
+let g:neocomplcache_enable_at_startup = 1
+let g:neocomplcache_enable_smart_case = 1
+" 输入3个字母才开始自动补全
+let g:neocomplcache_min_syntax_length = 3 
+" Use underbar completion. 
+let g:neocomplcache_enable_underbar_completion = 1 
+" 自动选中第一个补全项
+let g:neocomplcache_enable_auto_select = 1
+" 当有补全项时，按空格直接补全并且追加一个空格
+inoremap <expr><space>  pumvisible() ? neocomplcache#close_popup() . "\<SPACE>" : "\<SPACE>"
