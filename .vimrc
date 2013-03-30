@@ -1,34 +1,78 @@
-filetype plugin indent on
+""""""""""""""""""
+" 以下是基本配置 "
+""""""""""""""""""
+
+" 设置代码折叠
 set fdm=indent
 set foldlevel=9999    "关闭自动折叠
-set smarttab  
-set tabstop=4  
-set shiftwidth=4  
-set expandtab
-call pathogen#infect()
 
+"设置tab和缩进空格数
+set autoindent
+set smartindent
+set expandtab               
+set shiftwidth=4
+set tabstop=4
+
+set autoread                "文件在Vim之外修改过，自动重新读入
+set ignorecase              "检索时忽略大小写
+set hls                     "检索时高亮显示匹配项
+
+"""""""""""""""""""
+" 以下是vundle配置"
+"""""""""""""""""""
 syntax on
-filetype plugin indent on
+set nocompatible               " be iMproved
+filetype off                   " required!
 
-map <F4> :call JsBeautify()<CR>
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
 
-"F3 NERDTree
-map <F3> :NERDTreeToggle<CR>
-imap <F3> <ESC>:NERDTreeToggle<CR>
-||||||| merged common ancestors
-"F4快捷格式化js代码
-nnoremap <F4> :call g:Jsbeautify()<CR>
-let mapleader=","
+" let Vundle manage Vundle
+" required!
+Bundle 'gmarik/vundle'
 
-""打开javascript折叠
-let b:javascript_fold=1
-"打开javascript对dom、html和css的支持
-let javascript_enable_domhtmlcss=1
+" syntax
+" vim-less 和 vim-css有冲突，不要安装vim-css，vim-less本身就兼容css
+Bundle 'groenewege/vim-less'
+Bundle 'plasticboy/vim-markdown'
 
-let Tlist_JS_Settings = 'javascript;s:string;a:array;o:object;f:function'
-let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
+" tools
+Bundle 'maksimr/vim-jsbeautify'
+Bundle 'scrooloose/nerdtree'
+" vim控制台命令
+Bundle 'Lokaltog/vim-powerline'
+" 代码片段自动补全
+Bundle 'msanders/snipmate.vim'
+" 文件搜索
+Bundle 'kien/ctrlp.vim'
+" 自动补全 需要高版本的vim才行
+" Bundle 'Valloric/YouCompleteMe'
+" jslint 实时lint，错误高亮
+Bundle 'hallettj/jslint.vim'
+" ack
+Bundle 'mileszs/ack.vim'
 
-"pydict
-let g:pydiction_location = '~/.vim/tools/pydiction/complete-dict'
-"defalut g:pydiction_menu_height == 15
-"let g:pydiction_menu_height = 20 
+filetype plugin indent on     " required!
+filetype plugin on
+
+
+
+"""""""""""""""""""""
+" 以下是各种插件配置"
+"""""""""""""""""""""
+
+" config jsbeautify
+map <C-j> :call JsBeautify()<cr>
+
+" nerdtree
+" F3 NERDTree
+map <C-n> :NERDTreeToggle<CR>
+
+" powerline config
+set nocompatible   " Disable vi-compatibility
+set laststatus=2   " Always show the statusline
+set encoding=utf-8 " Necessary to show Unicode glyphs
+
+" ctrlp config
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
