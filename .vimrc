@@ -60,7 +60,10 @@ Bundle 'mileszs/ack.vim'
 " taglist 需要安装ctags
 " Bundle 'vim-scripts/taglist.vim'
 
+" 通用的自动补全
 Bundle 'Shougo/neocomplcache'
+" python自动补全, 有错误
+" Bundle 'davidhalter/jedi-vim'
 
 filetype plugin indent on     " required!
 filetype plugin on
