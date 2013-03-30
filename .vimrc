@@ -20,6 +20,7 @@ set hls                     "检索时高亮显示匹配项
 """""""""""""""""""
 " 以下是vundle配置"
 """""""""""""""""""
+set nu                         " 打开行号 
 syntax on
 set nocompatible               " be iMproved
 filetype off                   " required!
@@ -35,6 +36,11 @@ Bundle 'gmarik/vundle'
 " vim-less 和 vim-css有冲突，不要安装vim-css，vim-less本身就兼容css
 Bundle 'groenewege/vim-less'
 Bundle 'plasticboy/vim-markdown'
+Bundle 'pangloss/vim-javascript'
+Bundle 'othree/html5.vim'
+Bundle 'kchmck/vim-coffee-script'
+" 这个是显示css颜色的插件，但是特别特别慢！
+" Bundle 'skammer/vim-css-color'
 
 " tools
 Bundle 'maksimr/vim-jsbeautify'
@@ -43,7 +49,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'Lokaltog/vim-powerline'
 " 代码片段自动补全
 Bundle 'msanders/snipmate.vim'
-" 文件搜索
+" 文件搜索 代替command-T
 Bundle 'kien/ctrlp.vim'
 " 自动补全 需要高版本的vim才行
 " Bundle 'Valloric/YouCompleteMe'
@@ -51,6 +57,8 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'hallettj/jslint.vim'
 " ack
 Bundle 'mileszs/ack.vim'
+" taglist 需要安装ctags
+" Bundle 'vim-scripts/taglist.vim'
 
 filetype plugin indent on     " required!
 filetype plugin on
