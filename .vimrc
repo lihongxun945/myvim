@@ -51,10 +51,10 @@ Bundle 'Lokaltog/vim-powerline'
 Bundle 'msanders/snipmate.vim'
 " 文件搜索 代替command-T
 Bundle 'kien/ctrlp.vim'
-" 自动补全 需要高版本的vim才行
-" Bundle 'Valloric/YouCompleteMe'
 " jslint 实时lint，错误高亮
-Bundle 'hallettj/jslint.vim'
+" Bundle 'hallettj/jslint.vim'
+Bundle 'walm/jshint.vim'
+
 " ack
 Bundle 'mileszs/ack.vim'
 " taglist 需要安装ctags
@@ -97,4 +97,4 @@ let g:neocomplcache_enable_underbar_completion = 1
 " 自动选中第一个补全项
 let g:neocomplcache_enable_auto_select = 1
 " 当有补全项时，按空格直接补全并且追加一个空格
-inoremap <expr><space>  pumvisible() ? neocomplcache#close_popup() . "\<SPACE>" : "\<SPACE>"
+" inoremap <expr><space>  pumvisible() ? neocomplcache#close_popup() . "\<SPACE>" : "\<SPACE>"
