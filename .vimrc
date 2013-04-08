@@ -60,7 +60,7 @@ Bundle 'walm/jshint.vim'
 Bundle 'mileszs/ack.vim'
 " taglist 需要安装ctags
 " Bundle 'vim-scripts/taglist.vim'
-" 通用的自动补全
+" 自动补全，注意这个在执行make相关的命令的时候需要sudo，不然会报错
 Bundle 'Valloric/YouCompleteMe'
 " python自动补全, 有错误
 " Bundle 'davidhalter/jedi-vim'
