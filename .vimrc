@@ -91,5 +91,7 @@ let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
 " youcompleteme config
-let g:ycm_key_list_select_completion = ['<TAB>', '<Enter>']
 let g:ycm_autoclose_preview_window_after_completion = 1
+
+" markdown config
+let g:vim_markdown_folding_disabled=1
