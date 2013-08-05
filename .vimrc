@@ -17,6 +17,8 @@ set autoread                "文件在Vim之外修改过，自动重新读入
 set ignorecase              "检索时忽略大小写
 set hls                     "检索时高亮显示匹配项
 
+set fileencodings=utf8,gbk
+
 """""""""""""""""""
 " 以下是vundle配置"
 """""""""""""""""""
