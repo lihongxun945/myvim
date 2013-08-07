@@ -67,6 +67,9 @@ Bundle 'Valloric/YouCompleteMe'
 " python自动补全, 有错误
 " Bundle 'davidhalter/jedi-vim'
 
+" vim zencoding
+Bundle 'mattn/emmet-vim'
+
 filetype plugin indent on     " required!
 filetype plugin on
 
@@ -97,3 +100,6 @@ let g:ycm_autoclose_preview_window_after_completion = 1
 
 " markdown config
 let g:vim_markdown_folding_disabled=1
+
+" zen coding config
+let g:user_emmet_expandabbr_key = '<C-e>'
