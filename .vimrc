@@ -70,6 +70,8 @@ Bundle 'Valloric/YouCompleteMe'
 " vim zencoding
 Bundle 'mattn/emmet-vim'
 
+Bundle 'Yggdroot/indentLine'
+
 filetype plugin indent on     " required!
 filetype plugin on
 
@@ -103,3 +105,7 @@ let g:vim_markdown_folding_disabled=1
 
 " zen coding config
 let g:user_emmet_expandabbr_key = '<C-e>'
+
+"indentline
+let g:indentLine_color_term = 000
+"let g:indentLine_char = '┆'
