@@ -72,6 +72,8 @@ Bundle 'mattn/emmet-vim'
 
 Bundle 'Yggdroot/indentLine'
 
+Bundle 'juvenn/mustache.vim'
+
 filetype plugin indent on     " required!
 filetype plugin on
 
