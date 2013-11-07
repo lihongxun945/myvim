@@ -44,7 +44,7 @@ Bundle 'pangloss/vim-javascript'
 Bundle 'othree/html5.vim'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'xml.vim'
-" 这个是显示css颜色的插件，但是特别特别慢！
+" 这个是显示css颜色的插件，不要用 skammer / vim-css-color 因为这个特别慢！
 Bundle 'ap/vim-css-color'
 
 " tools
