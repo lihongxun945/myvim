@@ -19,6 +19,8 @@ set hls                     "检索时高亮显示匹配项
 
 set fileencodings=utf8,gbk
 
+set t_Co=256
+
 """""""""""""""""""
 " 以下是vundle配置"
 """""""""""""""""""
@@ -43,7 +45,7 @@ Bundle 'othree/html5.vim'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'xml.vim'
 " 这个是显示css颜色的插件，但是特别特别慢！
-" Bundle 'skammer/vim-css-color'
+Bundle 'ap/vim-css-color'
 
 " tools
 Bundle 'maksimr/vim-jsbeautify'
@@ -59,7 +61,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'walm/jshint.vim'
 
 " ack
-Bundle 'mileszs/ack.vim'
+" Bundle 'mileszs/ack.vim'
 " taglist 需要安装ctags
 " Bundle 'vim-scripts/taglist.vim'
 " 自动补全，注意这个在执行make相关的命令的时候需要sudo，不然会报错
@@ -72,7 +74,7 @@ Bundle 'mattn/emmet-vim'
 
 Bundle 'Yggdroot/indentLine'
 
-Bundle 'juvenn/mustache.vim'
+Bundle 'mustache/vim-mode'
 
 filetype plugin indent on     " required!
 filetype plugin on
@@ -111,3 +113,6 @@ let g:user_emmet_expandabbr_key = '<C-e>'
 "indentline
 let g:indentLine_color_term = 000
 "let g:indentLine_char = '┆'
+
+" css-color
+let g:cssColorVimDoNotMessMyUpdatetime = 1
