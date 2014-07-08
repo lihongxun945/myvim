@@ -10,8 +10,8 @@ set foldlevel=9999    "关闭自动折叠
 set autoindent
 set smartindent
 set expandtab               
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=2
+set tabstop=2
 
 set autoread                "文件在Vim之外修改过，自动重新读入
 set ignorecase              "检索时忽略大小写
@@ -75,6 +75,10 @@ Bundle 'mattn/emmet-vim'
 Bundle 'Yggdroot/indentLine'
 
 Bundle 'mustache/vim-mode'
+
+Bundle 'digitaltoad/vim-jade'
+
+Bundle 'scrooloose/nerdcommenter'
 
 filetype plugin indent on     " required!
 filetype plugin on
