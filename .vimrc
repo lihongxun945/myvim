@@ -26,71 +26,66 @@ set t_Co=256
 """""""""""""""""""
 set nu                         " 打开行号 
 syntax on
-set nocompatible               " be iMproved
-filetype off                   " required!
+set nocompatible              " be iMproved, required
+filetype off                  " required
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
 
-" let Vundle manage Vundle
-" required!
-Bundle 'gmarik/vundle'
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
 
-" syntax
-" vim-less 和 vim-css有冲突，不要安装vim-css，vim-less本身就兼容css
-Bundle 'groenewege/vim-less'
-Bundle 'plasticboy/vim-markdown'
-Bundle 'pangloss/vim-javascript'
-Bundle 'othree/html5.vim'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'xml.vim'
+Plugin 'groenewege/vim-less'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'pangloss/vim-javascript'
+Plugin 'othree/html5.vim'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'xml.vim'
 " 这个是显示css颜色的插件，不要用 skammer / vim-css-color 因为这个特别慢！
-Bundle 'ap/vim-css-color'
-
-" tools
-Bundle 'maksimr/vim-jsbeautify'
-Bundle 'scrooloose/nerdtree'
+Plugin 'ap/vim-css-color'
+Plugin 'scrooloose/nerdtree'
 " vim控制台命令
-Bundle 'Lokaltog/vim-powerline'
+Plugin 'Lokaltog/vim-powerline'
 " 代码片段自动补全
-Bundle 'msanders/snipmate.vim'
+Plugin 'msanders/snipmate.vim'
 " 文件搜索 代替command-T
-Bundle 'kien/ctrlp.vim'
+Plugin 'kien/ctrlp.vim'
 " jslint 实时lint，错误高亮
-" Bundle 'hallettj/jslint.vim'
-Bundle 'walm/jshint.vim'
+Plugin 'walm/jshint.vim'
 
-" ack
-" Bundle 'mileszs/ack.vim'
-" taglist 需要安装ctags
-" Bundle 'vim-scripts/taglist.vim'
-" 自动补全，注意这个在执行make相关的命令的时候需要sudo，不然会报错
-Bundle 'Valloric/YouCompleteMe'
-" python自动补全, 有错误
-" Bundle 'davidhalter/jedi-vim'
+Plugin 'jalcine/cmake.vim'
+Plugin 'Valloric/YouCompleteMe'
 
 " vim zencoding
-Bundle 'mattn/emmet-vim'
+Plugin 'mattn/emmet-vim'
 
-Bundle 'Yggdroot/indentLine'
+Plugin 'Yggdroot/indentLine'
 
-Bundle 'mustache/vim-mode'
+Plugin 'mustache/vim-mode'
 
-Bundle 'digitaltoad/vim-jade'
+Plugin 'digitaltoad/vim-jade'
 
-Bundle 'scrooloose/nerdcommenter'
-
-filetype plugin indent on     " required!
-filetype plugin on
-
-
-
-"""""""""""""""""""""
-" 以下是各种插件配置"
-"""""""""""""""""""""
-
-" config jsbeautify
-map <C-j> :call JsBeautify()<cr>
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+"
+"""""""""""""
+" 配置      "
+" """""""""""
 
 " nerdtree
 " F3 NERDTree
